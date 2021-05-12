@@ -112,7 +112,9 @@ public class Analitics implements Order, Customer, Provider {
       + System.lineSeparator() 
       + "Дата реалізації товару: " + this.getCustomerDate()
       + System.lineSeparator() 
-      + "Час реалізації товару: " + this.getCustomerTime();
+      + "Час реалізації товару: " + this.getCustomerTime()
+      + System.lineSeparator() 
+      + "Адреса замовника товару: " + this.getCustomerAddress();
   }
 
 }
