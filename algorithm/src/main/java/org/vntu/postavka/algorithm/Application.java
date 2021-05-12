@@ -1,0 +1,33 @@
+//package com.dzone.albanoj2.maven.java;
+package org.vntu.postavka.algorithm;
+
+import javax.swing.*;
+import static javax.swing.JOptionPane.*;
+
+public class Application {
+
+  public static void main(String[] args) {
+
+  int icon, option;
+// Тип пиктограммы
+  String msg, title, question, name;
+  int dialogButton = JOptionPane.YES_NO_OPTION;
+  option = JOptionPane.showConfirmDialog(null, "Строк реалізації товару короткий?", "Автоматизована система", JOptionPane.YES_NO_OPTION);
+  if (option == 0) {
+    showMessageDialog(null,"Реалізація замовлення!");
+    System.exit(0);
+  }
+
+  option = JOptionPane.showConfirmDialog(null, "Строк реалізації товару середній?", "Автоматизована система", JOptionPane.YES_NO_OPTION);
+  if (option == 0) { 
+    showMessageDialog(null,"Реалізація замовлення поставлена в чергу.");
+    System.exit(0);
+  }
+
+  option = JOptionPane.showConfirmDialog(null, "Черга велика?", "Автоматизована система", JOptionPane.YES_NO_OPTION);
+  if (option == 0)  
+    showMessageDialog(null,"Товар направляється до складу.");
+  else
+    showMessageDialog(null,"Реалізація замовлення поставлена в чергу.");
+  }
+}
