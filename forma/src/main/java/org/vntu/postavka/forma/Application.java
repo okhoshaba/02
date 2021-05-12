@@ -1,12 +1,27 @@
 package org.vntu.postavka.forma;
 
-import javax.swing.*;
+//import javax.swing.*;
 import static javax.swing.JOptionPane.*;
 
 public class Application {
 
-  public static void main(String[] args) {
+public static void main(String[] args) {
 
+  Analitics analitics;
+  String results;
+
+  analitics = new Analitics();
+  results = showInputDialog("Введіть ідентифікаційних номер:");
+  analitics.setIDNumber(results);
+//  System.out.println("ID: " + analitics.getIDNumber());
+  System.out.println("Report: " + analitics.toString());
+
+  
+
+  }
+}
+
+/*    
   int option;
 // Тип пиктограммы
   option = JOptionPane.showConfirmDialog(null, "Строк реалізації товару короткий?", "Автоматизована система", JOptionPane.YES_NO_OPTION);
@@ -27,4 +42,5 @@ public class Application {
   else
     showMessageDialog(null,"Реалізація замовлення поставлена в чергу.");
   }
-}
+*/
+//}

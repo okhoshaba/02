@@ -102,4 +102,9 @@ public class Analitics implements Order, Customer, Provider {
   public void setProviderAddress(String providerAdress) {
     this.providerAdress = providerAdress;
   } 
+
+  public String toString() {
+    return "Ідентифікаційний номер: " + this.getIDNumber();
+  }
+
 }
