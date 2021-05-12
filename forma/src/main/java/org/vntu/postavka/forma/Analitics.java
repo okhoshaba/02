@@ -104,7 +104,15 @@ public class Analitics implements Order, Customer, Provider {
   } 
 
   public String toString() {
-    return "Ідентифікаційний номер: " + this.getIDNumber();
+    return "Ідентифікаційний номер: " + this.getIDNumber()   
+      + System.lineSeparator() 
+      + "Дата замовлення: " + this.getOrderDate()
+      + System.lineSeparator() 
+      + "Час замовлення: " + this.getOrderTime()
+      + System.lineSeparator() 
+      + "Дата реалізації товару: " + this.getCustomerDate()
+      + System.lineSeparator() 
+      + "Час реалізації товару: " + this.getCustomerTime();
   }
 
 }

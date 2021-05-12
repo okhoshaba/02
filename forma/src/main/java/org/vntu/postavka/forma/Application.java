@@ -13,6 +13,34 @@ public static void main(String[] args) {
   analitics = new Analitics();
   results = showInputDialog("Введіть ідентифікаційних номер:");
   analitics.setIDNumber(results);
+
+  results = showInputDialog("Введіть дату замовлення:");
+  analitics.setOrderDate(results);
+
+  results = showInputDialog("Введіть час замовлення:");
+  analitics.setOrderTime(results);
+
+  results = showInputDialog("Введіть дату реалізації товару:");
+  analitics.setCustomerDate(results);
+
+  results = showInputDialog("Введіть час реалізації товару:");
+  analitics.setCustomerTime(results);
+
+  results = showInputDialog("Введіть адресу замовника:");
+  analitics.setCustomerAddress(results);
+
+  results = showInputDialog("Введіть ім'я постачальника:");
+  analitics.setProviderName(results);
+
+  results = showInputDialog("Введіть дату закупки товару:");
+  analitics.setProviderDate(results);
+
+  results = showInputDialog("Введіть час закупки товару:");
+  analitics.setProviderTime(results);
+
+  results = showInputDialog("Введіть адресу постачальника:");
+  analitics.setProviderAddress(results);
+
 //  System.out.println("ID: " + analitics.getIDNumber());
   System.out.println("Report: " + analitics.toString());
 
