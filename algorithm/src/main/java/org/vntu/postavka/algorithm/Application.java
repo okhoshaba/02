@@ -8,10 +8,8 @@ public class Application {
 
   public static void main(String[] args) {
 
-  int icon, option;
+  int option;
 // Тип пиктограммы
-  String msg, title, question, name;
-  int dialogButton = JOptionPane.YES_NO_OPTION;
   option = JOptionPane.showConfirmDialog(null, "Строк реалізації товару короткий?", "Автоматизована система", JOptionPane.YES_NO_OPTION);
   if (option == 0) {
     showMessageDialog(null,"Реалізація замовлення!");
