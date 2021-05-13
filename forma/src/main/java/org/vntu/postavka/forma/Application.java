@@ -29,6 +29,9 @@ public static void main(String[] args) {
   results = showInputDialog("Введіть адресу замовника:");
   analitics.setCustomerAddress(results);
 
+  results = showInputDialog("Введіть адресу постачальника:");
+  analitics.setProviderAddress(results);
+
   results = showInputDialog("Введіть ім'я постачальника:");
   analitics.setProviderName(results);
 
@@ -37,9 +40,6 @@ public static void main(String[] args) {
 
   results = showInputDialog("Введіть час закупки товару:");
   analitics.setProviderTime(results);
-
-  results = showInputDialog("Введіть адресу постачальника:");
-  analitics.setProviderAddress(results);
 
 //  System.out.println("ID: " + analitics.getIDNumber());
   System.out.println("Report: " + analitics.toString());
