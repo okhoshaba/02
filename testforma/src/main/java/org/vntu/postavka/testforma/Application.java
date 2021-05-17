@@ -83,16 +83,25 @@ public static void main(String[] args) {
     analitics.setOrderDate(results);
 
   results = showInputDialog("Введіть час замовлення:");
+
   if (!isValidTime(results))
     showMessageDialog(null, "Помилка у визначенні часу!");
   else
     analitics.setOrderTime(results);
 
   results = showInputDialog("Введіть дату реалізації товару:");
-  analitics.setCustomerDate(results);
+
+  if (!isValidDate(results))
+    showMessageDialog(null, "Помилка у визначенні дати!");
+  else
+    analitics.setCustomerDate(results);
 
   results = showInputDialog("Введіть час реалізації товару:");
-  analitics.setCustomerTime(results);
+
+  if (!isValidTime(results))
+    showMessageDialog(null, "Помилка у визначенні часу!");
+  else
+    analitics.setCustomerTime(results);
 
   results = showInputDialog("Введіть адресу замовника:");
   analitics.setCustomerAddress(results);
@@ -104,10 +113,18 @@ public static void main(String[] args) {
   analitics.setProviderName(results);
 
   results = showInputDialog("Введіть дату закупки товару:");
-  analitics.setProviderDate(results);
+
+  if (!isValidDate(results))
+    showMessageDialog(null, "Помилка у визначенні дати!");
+  else
+    analitics.setProviderDate(results);
 
   results = showInputDialog("Введіть час закупки товару:");
-  analitics.setProviderTime(results);
+
+  if (!isValidTime(results))
+    showMessageDialog(null, "Помилка у визначенні часу!");
+  else
+    analitics.setProviderTime(results);
 
   System.out.println("Report: " + analitics.toString());
 
